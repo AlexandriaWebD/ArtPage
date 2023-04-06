@@ -1,0 +1,35 @@
+html{
+    background: black url(abstract.jpg) center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+body{ margin: 0%; display:block; place-items: center; font-family: inter, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5em; }
+@media (min-width:300px){.body { display: grid; }}
+.container{ margin: 2vh;/*1vh inseamna 1% din inaltimea totala a paginii*/ background-color: rgba(79, 109, 245, 0.6); /*rgb+a a=transparenta*/ padding: 1rem; font-size: clamp(1rem, 2vw, 2rem); line-height: 1.5em;}
+@media (min-width:500px){ .container { margin: 2vh; padding: 2rem; border-radius: 2rem;}}
+@media (min-width:500px){ .container { margin: 7wv; padding: 2rem; ;}}
+header{ }
+.avatar{ display: block; float:left; width: 112px; height: auto; margin:0 1em 1em 0; border-radius: 50%;}
+@media (min-width:380px){.avatar{ float:left} }
+@media (min-width:930px){.avatar { width: clamp(130px, 14vw, 12rem);}}
+.TitlulPaginii{ display:block; margin:0%; font-size: clamp(2rem, 6vw, 4rem); line-height: 1em;}
+.DescrierePrincipala{ display: block; margin: 0.5em 0 1.5em;}
+main{ clear: both; }
+@media (min-width:500px){ .DescrierePrincipala { margin-bottom: 0,5em;}}
+.ListaLinkuri{display: block; margin: 0;padding: 0; line-height: 1px;
+
+}
+.ListaItem{display: block; margin: 0;padding: 0; border-bottom: 1px solid #fff;
+
+}
+.ListaLink{display: block; margin: 0.5em; color: #fff; text-decoration: none;
+
+}
+.ListaLink:hover{  color:black;}
+
+.ListaTitlu, .TitlulPropriuzis {display: block;margin: 0;padding: 0; font-size: 1em; line-height: 1.5em;
+
+}
+.TitlulPropriuzis {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+@media ( min-width: 710px) 
+{.ListaLinkuri {display: grid; grid-template-columns: 1fr 1fr;}}
